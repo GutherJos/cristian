@@ -1,108 +1,201 @@
-<!--Header-->
-<header class="app-header app-header-1 boxed" >
-    <div class="container" >
-        <div class="header-wrap">
-            <button class="button button-menu button-open-sidenav">
-                <span></span>
-            </button>
-            <div class="header-menu">
+<div class="scrollbar-sidebar">
+    <div class="app-sidebar__inner">
+        <ul class="vertical-nav-menu">
+            <li class="app-sidebar__heading">Menu</li>
+            <li class="mm-active">
+                <a href="#">
+                    <i class="metismenu-icon fa fa-tachometer"></i>
+                    Dashboards
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                </a>
                 <ul>
-                    <li class="has-menu" data-megamenu-link="mega-menu-1">
-                        <div class="mega-menu-link">
-                            <span class="title">Alumnos</span>
-                            <span class="icon fa fa-angle-left"></span>
-                        </div>
-                        <div data-megamenu-id="mega-menu-1" class="mega-menu mega-menu-1">
-                            <div class="mega-menu-inner">
-                                <div>
-                                    <div class="megamenu-info mb-15">
-                                        <p class="text-center mb-30">Seleccione un establecimiento para inscribir</p>
-                                    </div>
-                                    <div class="row row-lg-5 row-xl-5">
-                                        <div class="col el-flag">
-                                            <div class="inner">
-                                                <a href="<?php echo base_url(); ?>alumno/alumno_new">
-                                                    <img src="<?php echo base_url(); ?>assets/images/gatito.svg"
-                                                        alt="alt">
-                                                    <span class="title">Ingresar Estudiante</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="col el-flag">
-                                            <div class="inner">
-                                                <a href="<?php echo base_url('alumno/'); ?>">
-                                                    <img src="<?php echo base_url(); ?>assets/images/gatito2.png"
-                                                        alt="alt">
-                                                    <span class="title">Ver Estudiantes</span>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="has-menu" data-megamenu-link="mega-menu-2">
-                        <div class="mega-menu-link">
-                            <span class="title">Cursos</span>
-                            <span class="icon fa fa-angle-left"></span>
-                        </div>
-                        <div data-megamenu-id="mega-menu-2" class="mega-menu mega-menu-2">
-                            <div class="mega-menu-inner">
-                                <div>
-                                    <div class="espard-menu">
-                                        <div class="row row-xl-5">
-                                            <!--Col-->
-                                            <div class="col">
-                                                <p class="title">Datos de los cursos</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="page-blog.html">
-                                                            <span class="text">Ver Cursos</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="page-single-post.html">
-                                                            <span class="text">Agregar</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <!--/-->
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                     <li>
-                        <a href="page-cooperation.html">
-                            <span class="text">Maestros</span>
-                            <span class="icon fa fa-angle-left"></span>
+                        <a href="index.html" class="mm-active">
+                            <i class="metismenu-icon">
+                            </i>Analytics
                         </a>
                     </li>
                     <li>
-                        <a href="page-cooperation.html">
-                            <span class="text">Usuarios</span>
-                            <span class="icon fa fa-angle-left"></span>
+                        <a href="dashboards-commerce.html">
+                            <i class="metismenu-icon">
+                            </i>Commerce
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dashboards-sales.html">
+                            <i class="metismenu-icon">
+                            </i>Sales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="metismenu-icon"></i>
+                            Minimal
+                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="dashboards-minimal-1.html">
+                                    <i class="metismenu-icon">
+                                    </i>Variation 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboards-minimal-2.html">
+                                    <i class="metismenu-icon">
+                                    </i>Variation 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="dashboards-crm.html">
+                            <i class="metismenu-icon"></i>
+                            CRM
                         </a>
                     </li>
                 </ul>
-            </div>
-            <div class="header-logo">
-                <a href="index.html" class="primary-logo">
-                    <span class="text-1"><?php echo $this->session->userdata('name_user'); ?></span>
-                    <span class="text-2"></span>
+            </li>
+            <li>
+                <a href="<?php echo base_url('Usuario/'); ?>">
+                    <i class="metismenu-icon fa fa-users"></i>
+                    Usuarios
                 </a>
-            </div>
-            <div class="header-links">
-                <a href="<?php echo base_url();?>login/logout" class="button button-md button-primary">
-                    <span class="title">Cerrar Sesion</span>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class="metismenu-icon pe-7s-plugin"></i>
+                    Applications
+                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                 </a>
-            </div>
-        </div>
+                <ul>
+                    <li>
+                        <a href="apps-mailbox.html">
+                            <i class="metismenu-icon">
+                            </i>Mailbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-chat.html">
+                            <i class="metismenu-icon">
+                            </i>Chat
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-faq-section.html">
+                            <i class="metismenu-icon">
+                            </i>FAQ Section
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="app-sidebar__heading">UI Components</li>
+            <li>
+                <a href="#">
+                    <i class="metismenu-icon pe-7s-diamond"></i>
+                    Elements
+                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="metismenu-icon"></i>
+                            Buttons
+                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="elements-buttons-standard.html">
+                                    <i class="metismenu-icon">
+                                    </i>Standard
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-buttons-pills.html">
+                                    <i class="metismenu-icon">
+                                    </i>Pills
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-buttons-square.html">
+                                    <i class="metismenu-icon">
+                                    </i>Square
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-buttons-shadow.html">
+                                    <i class="metismenu-icon">
+                                    </i>Shadow
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements-buttons-icons.html">
+                                    <i class="metismenu-icon">
+                                    </i>With Icons
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="elements-dropdowns.html">
+                            <i class="metismenu-icon">
+                            </i>Dropdowns
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-icons.html">
+                            <i class="metismenu-icon">
+                            </i>Icons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-badges-labels.html">
+                            <i class="metismenu-icon">
+                            </i>Badges
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-cards.html">
+                            <i class="metismenu-icon">
+                            </i>Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-loaders.html">
+                            <i class="metismenu-icon">
+                            </i>Loading Indicators
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-list-group.html">
+                            <i class="metismenu-icon">
+                            </i>List Groups
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-navigation.html">
+                            <i class="metismenu-icon">
+                            </i>Navigation Menus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-timelines.html">
+                            <i class="metismenu-icon">
+                            </i>Timeline
+                        </a>
+                    </li>
+                    <li>
+                        <a href="elements-utilities.html">
+                            <i class="metismenu-icon">
+                            </i>Utilities
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+        </ul>
     </div>
-</header>
+</div>
+</div>
