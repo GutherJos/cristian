@@ -1,8 +1,19 @@
 <?php // var_dump($usuarios);?>
+
+<?php if ($this->session->flashdata('flash_message') != ""): ?>
+<div class="col-md-12">
+    <div class="alert alert-success" role="alert">
+        <?php echo $this->session->flashdata('flash_message'); ?>
+    </div>
+</div>
+<?php endif;?>
+
 <div>
-    <button style="float:right;" type="button" class="btn btn-outline-success">
-        Agregar &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
-    </button>
+    <a href="<?php echo base_url(); ?>Usuario/new">
+        <button style="float:right;" type="button" class="btn btn-outline-success">
+            Agregar &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        </button>
+    </a>
 </div>
 <hr>
 <table id="example" class="table table-hover table-striped table-bordered dataTable dtr-inline">
@@ -32,7 +43,25 @@
                     </button>
                 </center>
             </td>
+
         </tr>
         <?php $cnt++;endforeach;?>
     </tbody>
 </table>
+
+<div aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-lg" role="dialog"
+    tabindex="-1" id="exampleModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="margin-top:50px;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                    Actualizar datos del Usuario
+                </h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">
+                        &times;</span></button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>

@@ -5,56 +5,8 @@
             <li class="mm-active">
                 <a href="#">
                     <i class="metismenu-icon fa fa-tachometer"></i>
-                    Dashboards
-                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Inicio
                 </a>
-                <ul>
-                    <li>
-                        <a href="index.html" class="mm-active">
-                            <i class="metismenu-icon">
-                            </i>Analytics
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboards-commerce.html">
-                            <i class="metismenu-icon">
-                            </i>Commerce
-                        </a>
-                    </li>
-                    <li>
-                        <a href="dashboards-sales.html">
-                            <i class="metismenu-icon">
-                            </i>Sales
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="metismenu-icon"></i>
-                            Minimal
-                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="dashboards-minimal-1.html">
-                                    <i class="metismenu-icon">
-                                    </i>Variation 1
-                                </a>
-                            </li>
-                            <li>
-                                <a href="dashboards-minimal-2.html">
-                                    <i class="metismenu-icon">
-                                    </i>Variation 2
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="dashboards-crm.html">
-                            <i class="metismenu-icon"></i>
-                            CRM
-                        </a>
-                    </li>
-                </ul>
             </li>
             <li>
                 <a href="<?php echo base_url('Usuario/'); ?>">
