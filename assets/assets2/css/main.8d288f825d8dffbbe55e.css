@@ -22455,18 +22455,6 @@ legend {
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
-@font-face {
-	font-family: "Font Awesome 5 Free";
-	font-style: normal;
-	font-weight: 900;
-	src: url(assets/assets2/fonts/fa-solid-900.eot);
-	src: url(assets/assets2/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
-		url(assets/assets2/fonts/fa-solid-900.woff2) format("woff2"),
-		url(assets/assets2/fonts/fa-solid-900.woff) format("woff"),
-		url(assets/assets2/fonts/fa-solid-900.ttf) format("truetype"),
-		url(assets/assets2/fonts/fa-solid-900.svg#fontawesome) format("svg");
-}
-
 .fa,
 .fas {
 	font-family: "Font Awesome 5 Free";
@@ -28027,8 +28015,6 @@ legend {
 	font-family: "Ionicons";
 	src: url(assets/assets2/fonts/ionicons.eot);
 	src: url(assets/assets2/fonts/ionicons.eot#iefix) format("embedded-opentype"),
-		url(assets/assets2/fonts/ionicons.ttf) format("truetype"),
-		url(assets/assets2/fonts/ionicons.woff) format("woff"),
 		url(assets/assets2/fonts/ionicons.svg#Ionicons) format("svg");
 	font-weight: normal;
 	font-style: normal;
@@ -36209,8 +36195,8 @@ button.toast-close-button {
 }
 
 .slick-loading .slick-list {
-	background: #fff slick-image-url(assets/assets2/images/ajax-loader.gif) center center
-		no-repeat;
+	background: #fff slick-image-url(assets/assets2/images/ajax-loader.gif) center
+		center no-repeat;
 }
 
 .slick-prev,
@@ -38492,19 +38478,6 @@ div.fixed-table-scroll-outer {
 	background: #fff;
 }
 
-@font-face {
-	font-family: "Linearicons-Free";
-	src: url(assets/assets2/fonts/Linearicons-Free.eot);
-	src: url(assets/assets2/fonts/Linearicons-Free.eot?#iefixw118d)
-			format("embedded-opentype"),
-		url(assets/assets2/fonts/Linearicons-Free.woff2) format("woff2"),
-		url(assets/assets2/fonts/Linearicons-Free.woff) format("woff"),
-		url(assets/assets2/fonts/Linearicons-Free.ttf) format("truetype"),
-		url(assets/assets2/fonts/Linearicons-Free.svg#Linearicons-Free) format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-
 [class^="lnr-"],
 [class*=" lnr-"] {
 	font-family: "Linearicons-Free";
@@ -39204,9 +39177,8 @@ div.fixed-table-scroll-outer {
 	src: url(assets/assets2/fonts/Pe-icon-7-stroke.eot);
 	src: url(assets/assets2/fonts/Pe-icon-7-stroke.eot?#iefixd7yf1v)
 			format("embedded-opentype"),
-		url(assets/assets2/fonts/Pe-icon-7-stroke.woff) format("woff"),
-		url(assets/assets2/fonts/Pe-icon-7-stroke.ttf) format("truetype"),
-		url(assets/assets2/fonts/Pe-icon-7-stroke.svg#Pe-icon-7-stroke) format("svg");
+		url(assets/assets2/fonts/Pe-icon-7-stroke.svg#Pe-icon-7-stroke)
+			format("svg");
 	font-weight: normal;
 	font-style: normal;
 }

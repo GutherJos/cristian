@@ -8,5 +8,6 @@
 
 <!-- Disable tap highlight on IE -->
 <meta name="msapplication-tap-highlight" content="no">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
 <link href="<?php echo base_url(); ?>assets/assets2/css/main.8d288f825d8dffbbe55e.css" rel="stylesheet">

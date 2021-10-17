@@ -9,8 +9,8 @@
 <?php endif;?>
 
 <div>
-    <a href="<?php echo base_url(); ?>Usuario/new">
-        <button style="float:right;" type="button" class="btn btn-outline-success">
+    <a href="#" onclick="showAjaxModal('<?php echo base_url(); ?>Usuario/new/');">
+        <button style="float:right;" type="button" class="btn btn-outline-warning">
             Agregar &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
         </button>
     </a>
@@ -32,15 +32,24 @@
             <td><?php echo $cnt; ?></td>
             <td><?php echo $usuario->nombre; ?></td>
             <td><?php echo $usuario->propietario; ?></td>
-            <td><?php echo ($usuario->rol == 1) ? 'Administrador' : 'empleado'; ?></td>
+            <td><?php echo ($usuario->rol == 1) ? 'Administrador' : 'Gerente'; ?></td>
             <td>
-                <center><button type="button" class="btn btn-outline-warning">
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </button>
-                    &nbsp;
-                    <button type="button" class="btn btn-outline-danger">
-                        <i class="fa fa-trash-o" aria-hidden="true"></i>
-                    </button>
+                <center>
+                    <a href="#"
+                        onclick="showAjaxModal('<?php echo base_url(); ?>Usuario/update/<?php echo $usuario->id_usuario; ?>');">
+                        <button type="button" class="btn btn-outline-warning">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </button>
+                    </a>
+
+                    &nbsp; &nbsp;
+
+                    <a onClick="return confirm('Seguro desea eliminar el Usuario?')"
+                        href="<?php echo base_url(); ?>Usuario/delete/<?php echo $usuario->id_usuario; ?>">
+                        <button type="button" class="btn btn-outline-danger">
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
+                    </a>
                 </center>
             </td>
 
@@ -48,20 +57,17 @@
         <?php $cnt++;endforeach;?>
     </tbody>
 </table>
+<script>
+function showAjaxModal(url) {
 
-<div aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-lg" role="dialog"
-    tabindex="-1" id="exampleModal">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content" style="margin-top:50px;">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">
-                    Actualizar datos del Usuario
-                </h5>
-                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">
-                        &times;</span></button>
-            </div>
-            <div class="modal-body">
-            </div>
-        </div>
-    </div>
-</div>
+    jQuery('#exampleModal').modal('show', {
+        backdrop: 'true'
+    });
+    $.ajax({
+        url: url,
+        success: function(response) {
+            jQuery('#exampleModal .modal-body').html(response);
+        }
+    });
+}
+</script>

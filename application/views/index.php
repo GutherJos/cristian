@@ -540,6 +540,21 @@ $folder_name = $this->session->userdata('folder_name');
             </div>
         </div>
 
+        <div aria-hidden="true" aria-labelledby="myLargeModalLabel" class="modal fade bd-example-modal-lg" role="dialog"
+            tabindex="-1" id="exampleModal">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content" style="margin-top:50px;">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            ..
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                </div>
+            </div>
+        </div>
         <?php include "scripts.php";?>
 </body>
 

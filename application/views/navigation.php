@@ -3,150 +3,148 @@
         <ul class="vertical-nav-menu">
             <li class="app-sidebar__heading">Menu</li>
             <li class="mm-active">
-                <a href="#">
-                    <i class="metismenu-icon fa fa-tachometer"></i>
+                <a href="<?php echo base_url(); ?>">
+                    <i class="metismenu-icon fa fa-home"></i>
                     Inicio
                 </a>
             </li>
+
+            <!--
             <li>
                 <a href="<?php echo base_url('Usuario/'); ?>">
                     <i class="metismenu-icon fa fa-users"></i>
                     Usuarios
                 </a>
 
-            </li>
+            </li>-->
+
+
+
             <li>
-                <a href="#">
-                    <i class="metismenu-icon pe-7s-plugin"></i>
-                    Applications
-                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                <!--   U S U A R I O S   -->
+                <a href="<?php echo base_url('Usuario/index'); ?>">
+                    <i class="metismenu-icon fa fa-users"></i>
+                    Usuarios
                 </a>
                 <ul>
                     <li>
-                        <a href="apps-mailbox.html">
+                        <a href="<?php echo base_url('Usuario/view_user'); ?>">
                             <i class="metismenu-icon">
-                            </i>Mailbox
+                            </i>Ver
                         </a>
                     </li>
                     <li>
-                        <a href="apps-chat.html">
+                        <a href="<?php echo base_url('Usuario/new'); ?>">
                             <i class="metismenu-icon">
-                            </i>Chat
+                            </i>Agregar
                         </a>
                     </li>
                     <li>
                         <a href="apps-faq-section.html">
                             <i class="metismenu-icon">
-                            </i>FAQ Section
+                            </i>Actualizar
                         </a>
                     </li>
                 </ul>
-            </li>
-            <li class="app-sidebar__heading">UI Components</li>
+            </li><!--   F I N   U S U A R I O S   -->
+
+
             <li>
-                <a href="#">
-                    <i class="metismenu-icon pe-7s-diamond"></i>
-                    Elements
-                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                <!--   P R O P I E T A R I O S   -->
+                <a href="<?php echo base_url('Usuario/'); ?>">
+                    <i class="metismenu-icon fa fa-user-shield"></i>
+                    Propietarios
                 </a>
                 <ul>
                     <li>
-                        <a href="#">
-                            <i class="metismenu-icon"></i>
-                            Buttons
-                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="elements-buttons-standard.html">
-                                    <i class="metismenu-icon">
-                                    </i>Standard
-                                </a>
-                            </li>
-                            <li>
-                                <a href="elements-buttons-pills.html">
-                                    <i class="metismenu-icon">
-                                    </i>Pills
-                                </a>
-                            </li>
-                            <li>
-                                <a href="elements-buttons-square.html">
-                                    <i class="metismenu-icon">
-                                    </i>Square
-                                </a>
-                            </li>
-                            <li>
-                                <a href="elements-buttons-shadow.html">
-                                    <i class="metismenu-icon">
-                                    </i>Shadow
-                                </a>
-                            </li>
-                            <li>
-                                <a href="elements-buttons-icons.html">
-                                    <i class="metismenu-icon">
-                                    </i>With Icons
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="elements-dropdowns.html">
+                        <a href="apps-mailbox.html">
                             <i class="metismenu-icon">
-                            </i>Dropdowns
+                            </i>Ver
                         </a>
                     </li>
                     <li>
-                        <a href="elements-icons.html">
+                        <a href="apps-chat.html">
                             <i class="metismenu-icon">
-                            </i>Icons
+                            </i>Agregar
                         </a>
                     </li>
                     <li>
-                        <a href="elements-badges-labels.html">
+                        <a href="apps-faq-section.html">
                             <i class="metismenu-icon">
-                            </i>Badges
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-cards.html">
-                            <i class="metismenu-icon">
-                            </i>Cards
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-loaders.html">
-                            <i class="metismenu-icon">
-                            </i>Loading Indicators
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-list-group.html">
-                            <i class="metismenu-icon">
-                            </i>List Groups
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-navigation.html">
-                            <i class="metismenu-icon">
-                            </i>Navigation Menus
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-timelines.html">
-                            <i class="metismenu-icon">
-                            </i>Timeline
-                        </a>
-                    </li>
-                    <li>
-                        <a href="elements-utilities.html">
-                            <i class="metismenu-icon">
-                            </i>Utilities
+                            </i>Actualizar
                         </a>
                     </li>
                 </ul>
+            </li><!--   F I N   P R O P I E T A R I O S   -->
+
+
+
+            <li>
+                <!--   P R O Y E C T O S   -->
+                <a href="<?php echo base_url('Usuario/'); ?>">
+                    <i class="metismenu-icon fa fa-hard-hat"></i>
+                    Proyectos
+                </a>
+                <ul>
+                    <li>
+                        <a href="apps-mailbox.html">
+                            <i class="metismenu-icon">
+                            </i>Ver
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-chat.html">
+                            <i class="metismenu-icon">
+                            </i>Crear
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-faq-section.html">
+                            <i class="metismenu-icon">
+                            </i>Actualizar
+                        </a>
+                    </li>
+                </ul>
+            </li><!--   F I N   P R O Y E C T O S   -->
+
+
+
+            <li>
+                <!--   T R A M I T E S   -->
+                <a href="<?php echo base_url('Usuario/'); ?>">
+                    <i class="metismenu-icon fa fa-folder-open"></i>
+                    Trámites
+                </a>
+                <ul>
+                    <li>
+                        <a href="apps-mailbox.html">
+                            <i class="metismenu-icon">
+                            </i>Ver
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-chat.html">
+                            <i class="metismenu-icon">
+                            </i>Crear
+                        </a>
+                    </li>
+                    <li>
+                        <a href="apps-faq-section.html">
+                            <i class="metismenu-icon">
+                            </i>Actualizar
+                        </a>
+                    </li>
+                </ul>
+            </li><!--   F I N   T R A M I T E S   -->
+
             </li>
-
-
+            <li class="app-sidebar__heading">CONFIGURACIÓN</li>
+            <li>
+                <a href="#">
+                    <i class="metismenu-icon fa fa-cogs"></i>
+                    Ajustes
+                </a>
+            </li>
         </ul>
     </div>
 </div>
